@@ -1,4 +1,7 @@
 <%= form_with model:@book,local:true do |f| %>
+
+<%= render 'layouts/error_messages', model: f.object %>
+
 <p><%= form.label :title %><br>
 <%= form.text_filed :title %>
 </p>

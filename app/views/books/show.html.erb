@@ -1,12 +1,12 @@
 <html>
   <head></head>
   <body>
-    <p><strong>Title:</strong>
+    <p><span class="bold">Title:</span>
     <%= @book.title %></p>
-    <p><strong>body:</strong>
+    <p><span class="bold">body:</span>
     <%= @book.body %></p>
     
-  <%= link_to "Edit",edit_book_path(@book) %>
+  <%= link_to "edit",edit_book_path(@book) %>
   " | "
   <%= link_to "back",books_path %>
   </body>
