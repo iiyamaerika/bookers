@@ -21,7 +21,7 @@
             <%= link_to "show",book_path(book) %>
           </td>
           <td>
-            <%= link_to "edit",book_path(book) %>
+            <%= link_to "edit",edit_book_path(book) %>
           </td>
           <td>
             <%= link_to "destroy",book_path(book),method: :delete %>
@@ -32,6 +32,7 @@
     </table>
 
     <h2>New book</h2>
+    <%= flash[:alert] %>
     <%= form_with model: @book, url:'/books', local:true do |f| %>
     <div class="field">
     <label for="book_title">Title</label>
@@ -40,8 +41,8 @@
     <div class="field">
       <label for="book_body">Body</label>
       <%= f.text_area :body %>
-      <%= f.submit 'Create Book' %>
     </div>
+      <%= f.submit 'Create Book' %>
     <% end %>
   </body>
 </html>

@@ -5,9 +5,9 @@
     <%= @book.title %></p>
     <p><strong>body:</strong>
     <%= @book.body %></p>
-
-  <a class="edit_39495" href="/books/39495/edit">Edit</a>
+    
+  <%= link_to "Edit",edit_book_path(@book) %>
   " | "
-  <a class="back" href="/books">Back</a>
+  <%= link_to "back",books_path %>
   </body>
 </html>
