@@ -1,8 +1,0 @@
-  <% if model.errors.any? %>
-  <div class="alert alert-warning">
-    <ul>
-      <%= @book.errors.count %>件のエラーが発生しました
-        <li><% model.errors.full_messages.each do |message| %></li>
-      <% end %>
-    </ul>
-  </div>
