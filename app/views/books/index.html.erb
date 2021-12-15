@@ -31,7 +31,7 @@
     <%= render 'layouts/error_messages', book: @book %>
     <%= form_with model: @book, url:'/books', local:true do |f| %>
     <div class="field">
-    <%= f.label :title %>
+      <%= f.label :title %>
       <%= f.text_field :title %>
     </div>
     <div class="field">
